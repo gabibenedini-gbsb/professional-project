@@ -1,43 +1,59 @@
 # professional-project
 Repositório profissional contendo projetos voltado a análises de dados, automação, melhorias de processo e soluções orientadas a negócio. Desenvolvido para demonstrar habilidades técnicas, organização, boas práticas e pensamento analítico.
-# 🏦 Projeto: Hub de Inteligência Competitiva PJ & Campanhas Bancárias 2026
+🏦 Inteligência de Mercado: Campanhas de Aquisição PJ e Crédito 2026
+🎯 1. Contexto e Objetivos
+Este projeto utiliza o NotebookLM como um motor de análise competitiva para o setor bancário brasileiro, com foco no público Pessoa Jurídica (PJ). O objetivo é processar dados densos (tarifários, manuais de crédito e relatórios de mercado) para fundamentar estratégias de marketing e vendas para produtos de fomento, especificamente Pronampe e Procred.
 
-Este repositório documenta a criação de um **Segundo Cérebro** no **NotebookLM** projetado para atuar como um assistente estratégico na criação de campanhas de aquisição de clientes Pessoa Jurídica (PJ). O projeto foca no benchmarking de instituições financeiras e na estruturação de argumentos de venda para linhas de fomento.
+Objetivos de Estudo:
 
-## 🎯 Objetivo do Projeto
-Centralizar e processar dados complexos de múltiplos concorrentes para gerar insumos criativos e técnicos para campanhas de marketing e vendas, com foco em:
-* **Aquisição de Clientes:** Estratégias para migração de base (Churn de concorrentes).
-* **Crédito Subsidiado:** Domínio sobre as regras e vantagens do **Pronampe** e **Procred**.
-* **Eficiência Tarifária:** Comparativos de custos entre bancos tradicionais e digitais.
+Identificar lacunas tarifárias entre bancos tradicionais e digitais.
 
-## 📂 Estrutura de Fontes (Curadoria)
-O repositório no NotebookLM foi abastecido com:
-1.  **Tabelas de Tarifas PJ:** PDFs oficiais de pacotes de serviços (Bradesco, Itaú, Santander, Inter e Nubank).
-2.  **Manuais de Crédito:** Regulamentos vigentes do BNDES e FGO sobre Pronampe e Procred (Ciclo 2026).
-3.  **Relatórios de RI (Relações com Investidores):** Documentos de resultados dos bancos para identificar focos de expansão de cada player.
-4.  **Benchmarks de Adquirência:** Tabelas de taxas de antecipação e aluguel de maquininhas de cartões.
+Sintetizar regras complexas de crédito governamental em argumentos de venda claros.
 
-## 🚀 Engenharia de Prompts e Inteligência
-Para este projeto, foram desenvolvidas camadas de prompts para diferentes necessidades:
+Criar um repositório de consultas rápidas para objeções de clientes em campanhas B2B.
 
-### 1. Benchmarking de Concorrentes
-> *"Atue como Analista de Mercado. Compare a 'Cesta de Serviços' do Banco Itaú Empresas com a do Bradesco. Identifique onde o Bradesco é mais competitivo para empresas com faturamento acima de R$ 1MM."*
+📚 2. Curadoria de Fontes
+As fontes selecionadas garantem a precisão técnica e evitam alucinações da IA por estarem baseadas em documentos oficiais de 2026:
 
-### 2. Copywriting para Campanhas (Foco em Crédito)
-> *"Com base no manual do Procred, escreva 3 argumentos de venda focados na carência de 12 meses, comparando o custo financeiro desta linha com o Capital de Giro tradicional dos bancos digitais."*
+Tabela Geral de Serviços PJ (Itaú): Acesse o PDF aqui
 
-### 3. Scripts de Conversão (Quebra de Objeções)
-> *"Gere um roteiro de abordagem para gerentes de conta focado em clientes que reclamam das taxas de manutenção dos bancos tradicionais, utilizando os diferenciais de taxa zero dos bancos digitais que constam nas fontes."*
+Relatório Semestral "Onde Investir" (XP): Análise de cenário macro e taxas Selic/IPCA.
 
-## 🛠️ Tecnologias Utilizadas
-* **NotebookLM:** Engine de processamento de contexto e análise de documentos.
-* **IA Generativa:** Para estruturação de textos publicitários e scripts de vendas.
-* **Análise de Dados:** Cruzamento de tabelas tarifárias em PDF.
+Manual de Operações Pronampe (FGO/BB): Diretrizes oficiais sobre garantias e carência.
 
-## 📈 Resultados e Insumos Gerados
-* **Matriz Comparativa:** Tabela dinâmica de tarifas entre os 5 principais players do mercado.
-* **Playbook de Vendas:** Guia rápido de argumentos para linhas de crédito governamentais.
-* **Análise de Diferenciais:** Identificação clara de "gaps" nos serviços dos concorrentes para exploração em campanhas digitais.
+Cartas Mensais Verde Asset: Visão estratégica de gestores sobre riscos de crédito no Brasil.
+
+🛠️ 3. Engenharia de Prompts e "Cicatrizes"
+O mercado valoriza o processo. Abaixo, documento a evolução do raciocínio para extrair o melhor da IA:
+
+💡 Pergunta Estratégica Base
+"Extraia os custos de manutenção de conta e taxas de antecipação de recebíveis do PDF do Banco X e compare com o Banco Y."
+
+🩹 Cicatrizes (Troubleshooting & Troubleshooting)
+Problema: A IA inicialmente misturava taxas de "Cesta de Serviços" de Pessoa Física com Pessoa Jurídica que estavam no mesmo documento.
+
+Ajuste de Prompt: Adicionei uma instrução de contexto negativo: "Ignore seções de 'Varejo PF'. Extraia apenas dados da seção 'Corporate' e 'Business', focando em empresas com faturamento anual de até R$ 4,8 milhões."
+
+Aprendizado: Descobri que pedir para a IA "pensar passo a passo" antes de montar a tabela comparativa reduzia erros de transcrição de valores numéricos complexos.
+
+📖 4. Miniguia de Estudo (Entrega Final)
+📄 Resumo Estruturado: O Cenário PJ em 2026
+O mercado bancário PJ em 2026 está polarizado: enquanto bancos digitais dominam a experiência de usuário e taxas zero, bancos tradicionais como Bradesco e Itaú detêm a vantagem no crédito assistido (Pronampe/BNDES) devido à capilaridade física e fundos garantidores consolidados. A grande oportunidade de campanha reside na carência de 12 meses dessas linhas frente ao capital de giro caro dos concorrentes.
+
+📙 Glossário de Conceitos Chave
+FGO (Fundo Garantidor de Operações): O mecanismo que permite ao banco emprestar sem exigir imóveis ou veículos como garantia real do empresário.
+
+Spread Bancário: A margem de lucro do banco na operação.
+
+CET (Custo Efetivo Total): A métrica real de comparação; inclui taxa nominal, impostos (IOF) e seguros.
+
+🔄 Prompts Reutilizáveis para Revisão
+Análise de Concorrente: "Com base nas novas tabelas de tarifas, cite 3 motivos financeiros para um cliente trocar o Banco X por nós."
+
+Copywriting de Campanha: "Gere um roteiro de 30 segundos para vídeo focado em empresários que precisam de crédito, mencionando a carência de 1 ano do Pronampe."
+
+Autor: [GABRIELA BENEDINI]
+Estrategista em Direção Técnica e Inteligência de Dados aplicada ao Marketing Financeiro.
 
 ---
 **Desenvolvido por:** [Seu Nome]
