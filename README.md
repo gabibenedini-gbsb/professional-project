@@ -1,5 +1,6 @@
 # professional-project
 Repositório profissional contendo projetos voltado a análises de dados, automação, melhorias de processo e soluções orientadas a negócio. Desenvolvido para demonstrar habilidades técnicas, organização, boas práticas e pensamento analítico.
+
 🏦 Inteligência de Mercado: Campanhas de Aquisição PJ e Crédito 2026
 🎯 1. Contexto e Objetivos
 Este projeto utiliza o NotebookLM como um motor de análise competitiva para o setor bancário brasileiro, com foco no público Pessoa Jurídica (PJ). O objetivo é processar dados densos (tarifários, manuais de crédito e relatórios de mercado) para fundamentar estratégias de marketing e vendas para produtos de fomento, especificamente Pronampe e Procred.
