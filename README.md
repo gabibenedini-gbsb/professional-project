@@ -2,10 +2,11 @@
 Repositório profissional contendo projetos voltado a análises de dados, automação, melhorias de processo e soluções orientadas a negócio. Desenvolvido para demonstrar habilidades técnicas, organização, boas práticas e pensamento analítico.
 
 🏦 Inteligência de Mercado: Campanhas de Aquisição PJ e Crédito 2026
+
 🎯 1. Contexto e Objetivos
 Este projeto utiliza o NotebookLM como um motor de análise competitiva para o setor bancário brasileiro, com foco no público Pessoa Jurídica (PJ). O objetivo é processar dados densos (tarifários, manuais de crédito e relatórios de mercado) para fundamentar estratégias de marketing e vendas para produtos de fomento, especificamente Pronampe e Procred.
 
-Objetivos de Estudo:
+Objetivos:
 
 Identificar lacunas tarifárias entre bancos tradicionais e digitais.
 
@@ -55,7 +56,3 @@ Copywriting de Campanha: "Gere um roteiro de 30 segundos para vídeo focado em e
 
 Autor: [GABRIELA BENEDINI]
 Estrategista em Direção Técnica e Inteligência de Dados aplicada ao Marketing Financeiro.
-
----
-**Desenvolvido por:** [Seu Nome]
-*Focado em inovação para o setor financeiro e marketing estratégico B2B.*
